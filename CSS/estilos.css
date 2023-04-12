@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #918c73;
+ }
+ header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 24px;
+    background-color:#fef4e8
+ }
+
+ nav{
+    display: flex;
+ }
+ nav a{
+    margin: 10px;
+    color: #970747;
+    text-decoration: none;
+ }
+ #Objetos{
+    align-items: center;
+    justify-self: left;
+ }
+
+ #Headerright{
+    align-items: center;
+    justify-content: right;
+ }
