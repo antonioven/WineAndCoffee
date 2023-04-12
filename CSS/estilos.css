@@ -24,6 +24,28 @@ body{
     color: #970747;
     text-decoration: none;
  }
+
+ input{
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
+    border-color: white;
+    padding-left: 2%;
+    font-size: 1.2em;
+ }
+
+ button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    border-color: lightgrey
+ }
+
+ ::placeholder{
+    font-style: italic;
+ }
+
  #Objetos{
     align-items: center;
     justify-self: left;
@@ -32,4 +54,77 @@ body{
  #Headerright{
     align-items: center;
     justify-content: right;
+ }
+
+ #Jimg1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+ }
+
+ #Jimg2{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+ }
+
+ #Jumbotron{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    margin: 10px;
+ }
+ #contenido{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+ }
+
+ #Sugerencias{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    background-color: #fef4e8;
+    margin: 0%;
+ }
+
+ #PreSu{
+    padding-top: 2%;
+    color:#970747;
+    font-size: 24px;
+ }
+
+ #contenedor{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+ }
+
+ #Boton{
+    display: flex;
+    justify-content: center;
+    background-color: #fef4e8;
+    padding-top: 1%;
+    padding-bottom: 1%;
+ }
+
+ .Head-Bold{
+    display: flex;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 1%;
+ }
+
+ .Pictures{
+    border-radius: 20px;
+ }
+
+ .Cont-Norm{
+    color: white;
+    font-size: 24px;
+    padding-right: 4%;
+    padding-left: 2%;
+    letter-spacing: 3px;
  }
