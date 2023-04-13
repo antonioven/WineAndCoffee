@@ -171,9 +171,8 @@ body{
  }
 
  .Pictures{
-    border-radius: 20px;
-    size: 45vh;
- }
+   border-radius: 20px;
+}
 
  .Cont-Norm{
     color: white;
@@ -213,6 +212,11 @@ body{
   }
 
   @media(max-width: 900px){
+
+    header img{
+      height: 80px;
+      width: auto;
+    }
     .mostrar-menu,.esconder-menu{
         display: block;
     }
@@ -254,5 +258,39 @@ body{
 
     #Sugerencias{
       padding: 10px 20px;
+    }
+    .Head-Bold{
+      font-size: 18px;
+   }
+   .Cont-Norm{
+      font-size: 10px;
+   }
+   #PreSu{
+      font-size: 12px;
+   }
+   #Social a img{
+      padding: 5px 10px;
+      width: 20px;
+    }
+
+    footer{
+      font-size: 10px;
+    }
+
+    .footer-info{
+      padding: 0 10px;
+    }
+    h3{
+      padding: 5px 10px;
+    }
+    button{
+      height: 30px;
+      width: 100px;
+      font-size: 1em;
+    }
+    input{
+      height: 70%;
+      width: 70%;
+      font-size: 1em;
     }
   }
