@@ -10,19 +10,22 @@ body{
     background-color: #918c73;
  }
  header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     font-size: 24px;
-    background-color:#fef4e8
+    background-color:#fef4e8;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
  }
 
  nav{
     display: flex;
  }
- nav a{
-    margin: 10px;
+ .List a{
     color: #970747;
     text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
  }
 
  input{
@@ -42,19 +45,29 @@ body{
     border-color: lightgrey
  }
 
+ footer{
+    margin: 0%;
+    background-color: white;
+ }
+
+ li{
+   padding-top: 0;
+   padding-bottom: 5%;
+ }
+
+ h3{
+   padding: 10px 20px;
+ }
+
+ div hr{
+   width: 90%;
+   background: rgb(150, 150, 150);
+ }
+
  ::placeholder{
     font-style: italic;
  }
 
- #Objetos{
-    align-items: center;
-    justify-self: left;
- }
-
- #Headerright{
-    align-items: center;
-    justify-content: right;
- }
 
  #Jimg1{
     border-top-right-radius: 20px;
@@ -73,8 +86,8 @@ body{
     margin: 10px;
  }
  #contenido{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
     margin: 10px;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -108,6 +121,46 @@ body{
     padding-bottom: 1%;
  }
 
+ #Social{
+    display: flex;
+    justify-content:left;
+    padding: 0 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 20fr;
+    grid-template-rows: 1fr;
+ }
+
+ #Social a img{
+   padding: 10px 20px;
+ }
+
+ #Informacion{
+   display: flex;
+   justify-content: right;
+   padding-left: 2%;
+   padding-bottom: 1%;
+   color: rgb(150, 150, 150);
+ }
+
+ #Informacion div ul li{
+   padding: 10px 0;
+ }
+
+ #LastMessage{
+   display: flex;
+   justify-content: center;
+   padding-top: 1%;
+   padding-bottom: 0.5%;
+   color: rgb(150, 150, 150);
+ }
+ #Line{
+   display: flex;
+   justify-content: center;
+ }
+
+ #check{
+    display: none;
+ }
+
  .Head-Bold{
     display: flex;
     color: white;
@@ -119,6 +172,7 @@ body{
 
  .Pictures{
     border-radius: 20px;
+    size: 45vh;
  }
 
  .Cont-Norm{
@@ -128,3 +182,77 @@ body{
     padding-left: 2%;
     letter-spacing: 3px;
  }
+
+ .footer-info{
+    list-style:none;
+    padding:  0 20px;
+  }
+ 
+  .opcli{
+    text-decoration: none;
+    transition: 0.4s;
+    color: rgb(150, 150, 150);
+  }
+
+  .opcli:hover{
+   color: #970747;
+  }
+
+  .mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transform: 0.4s;
+  }
+
+  .mostrar-menu{
+    order: 1;
+  }
+  .List a:hover, .mostrar-menu:hover, .esconder-menu:hover{
+    color: #918c73;
+  }
+
+  @media(max-width: 900px){
+    .mostrar-menu,.esconder-menu{
+        display: block;
+    }
+    .List{
+      flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fef4e8;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .List a{
+      display: block;
+      padding: 20px;
+    }
+
+    .esconder-menu{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+    
+    #check:checked ~ .List{
+      right: 0;
+    }
+    #contenido{
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    .Pictures{
+      margin-top: 20px;
+    }
+
+    #Sugerencias{
+      padding: 10px 20px;
+    }
+  }
